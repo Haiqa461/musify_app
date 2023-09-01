@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:musify_app/account_screens/home_screen.dart';
+import 'package:musify_app/account_screens/reset_screen.dart';
+import 'package:musify_app/account_screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -69,22 +71,31 @@ class _LoginScreenState extends State<LoginScreen> {
                       fillColor: const Color.fromRGBO(248, 248, 248, 0.092)),
                 ),
               ),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Already have an account?',
                     style: TextStyle(fontFamily: 'Jomolhari', fontSize: 14),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 90,
                   ),
-                  Text(
-                    'Forget Password?',
-                    style: TextStyle(
-                        fontFamily: 'Jomolhari',
-                        fontSize: 16,
-                        color: Color(0xffF22355)),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              // ignore: non_constant_identifier_names
+                              builder: (Context) => const ResetScreen()));
+                    },
+                    child: const Text(
+                      'Forget Password?',
+                      style: TextStyle(
+                          fontFamily: 'Jomolhari',
+                          fontSize: 16,
+                          color: Color(0xffF22355)),
+                    ),
                   ),
                 ],
               ),
@@ -122,12 +133,21 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 30,
               ),
-              const Text(
-                'Sign up',
-                style: TextStyle(
-                    fontFamily: 'Jomolhari',
-                    fontSize: 24,
-                    color: Color.fromARGB(255, 242, 35, 83)),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          // ignore: non_constant_identifier_names
+                          builder: (Context) => const SignUpScreen()));
+                },
+                child: const Text(
+                  'Sign up',
+                  style: TextStyle(
+                      fontFamily: 'Jomolhari',
+                      fontSize: 24,
+                      color: Color.fromARGB(255, 242, 35, 83)),
+                ),
               ),
             ],
           ),
