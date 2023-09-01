@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 
-class _ResetScreen extends StatefulWidget {
+class ResetScreen extends StatefulWidget {
   // ignore: unused_element
-  const _ResetScreen({super.key});
+  const ResetScreen({super.key});
 
   @override
-  State<_ResetScreen> createState() => __ResetScreenState();
+  State<ResetScreen> createState() => __ResetScreenState();
 }
 
-class __ResetScreenState extends State<_ResetScreen> {
+class __ResetScreenState extends State<ResetScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [],
+        ),
+      ),
+    );
   }
 }
