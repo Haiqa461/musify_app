@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:musify_app/playlists_screens/playlist1_screen.dart';
+import 'package:musify_app/playlists_screens/playlist2_screen.dart';
+import 'package:musify_app/playlists_screens/playlist3_screen.dart';
 
 class AlbumOne extends StatefulWidget {
   const AlbumOne({super.key});
@@ -17,32 +20,65 @@ class _AlbumOneState extends State<AlbumOne> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(32, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(18)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Playlist1()));
+                },
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('images/hasbi_rabi.jpg')),
+                      color: const Color.fromARGB(32, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(18)),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(32, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(18)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Playlist2()));
+                },
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('images/nasheed.jpg')),
+                      color: const Color.fromARGB(32, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(18)),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(32, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(18)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Playlist3()));
+                },
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('images/balaghal.jpg')),
+                      color: const Color.fromARGB(32, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(18)),
+                ),
               ),
             ),
           ],

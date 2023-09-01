@@ -62,6 +62,15 @@ flutter:
   assets:
     - images/Logo.png
     - images/home.jpg
+    - images/balaghal.jpg
+    - images/nasheed.jpg
+    - images/hasbi_rabi.jpg
+    - images/ost_osman.jpg
+    - images/songs.jpg
+    - images/drills.jpg
+    - images/mehmad.jpg
+    - images/slejj.jpg
+    - images/bili.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class _ResetScreen extends StatefulWidget {
+  // ignore: unused_element
   const _ResetScreen({super.key});
 
   @override

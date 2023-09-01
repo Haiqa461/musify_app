@@ -21,6 +21,9 @@ class _AlbumThreeState extends State<AlbumThree> {
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
+                    image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage('images/songs.jpg')),
                     color: const Color.fromARGB(32, 255, 255, 255),
                     borderRadius: BorderRadius.circular(18)),
               ),
@@ -31,6 +34,9 @@ class _AlbumThreeState extends State<AlbumThree> {
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
+                    image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage('images/bili.jpg')),
                     color: const Color.fromARGB(32, 255, 255, 255),
                     borderRadius: BorderRadius.circular(18)),
               ),
@@ -41,6 +47,9 @@ class _AlbumThreeState extends State<AlbumThree> {
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
+                    image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage('images/slejj.jpg')),
                     color: const Color.fromARGB(32, 255, 255, 255),
                     borderRadius: BorderRadius.circular(18)),
               ),
